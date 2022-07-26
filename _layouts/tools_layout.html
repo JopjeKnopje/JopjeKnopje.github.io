@@ -1,0 +1,15 @@
+---
+layout: archive
+---
+<!-- based on the posts layout -->
+
+{{ content }}
+
+{% for tool in site.tools %}
+  <h2>
+    <a href="{{ tool.url }}">
+      {{ tool.name }}
+    </a>
+  </h2>
+  <p>{{ tool.content | markdownify }}</p>
+{% endfor %}
