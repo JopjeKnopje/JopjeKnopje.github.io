@@ -3,6 +3,7 @@ layout: archive
 ---
 <!-- based on the posts layout -->
 
+
 {{ content }}
 
 {% for tool in site.tools %}
@@ -11,5 +12,23 @@ layout: archive
       {{ tool.name }}
     </a>
   </h2>
-  <p>{{ tool.content | markdownify }}</p>
+  <p class="archive__item-excerpt" itemprop="description"> {{ tool.description | markdownify }} </p>
+  {{ tool.description | markdownify }}
 {% endfor %}
+
+
+
+{{ content }}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% assign posts = site.tools %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+  {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+{% include paginator.html %}

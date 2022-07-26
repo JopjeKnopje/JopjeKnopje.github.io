@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "Joppe's zooi"
 title_separator          : " | "
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Joppe Boeve"
+description              : "My online dump."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -292,8 +292,8 @@ defaults:
       path: ""
       type: tools
     values:
-      layout: single
-      author_profile: false
+      layout: archive
+
       
 
 

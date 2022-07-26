@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- include algebra first since the other files depend on it -->
+    <!-- TODO Figure out which one of these we actually need -->
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/nerdamer.core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Algebra.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Calculus.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Solve.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Extra.js"></script>
+
+    <div id="contentDiv"></div>
+
+    <header>
+    <script id="navbar-template" type="text/x-handlebars-template">
+
+        <!-- use the tripple brackets to the html gets "interpreted" -->
+        {{{generateNavbar currentPage="tools.html"}}} <br />
+
+    </script>
+    </header>
+
+    
+
+    <div>
+        <input type="number" placeholder="Vs" name="vs"/>
+        <p></p>
+        <input type="number" placeholder="V1" name="v1"/>
+        <p></p>
+        <input type="number" placeholder="V2" name="v2"/>
+
+    </div>
+    <div>
+        <input type="number" placeholder="R1" name="r1"/>
+        <p></p>
+
+        <input type="number" placeholder="R2" name="r2"/>
+        <p></p>
+
+        <input type="number" placeholder="R3" name="r3"/>
+    </div>
+
+    
+
+    <script src="inputhandler.js"></script>
+    <script src="calculate.js"></script>
+    <!-- include the scripts at last because they are dependable on the inputfields -->
+
+
+
+</body>
+
+</html>
