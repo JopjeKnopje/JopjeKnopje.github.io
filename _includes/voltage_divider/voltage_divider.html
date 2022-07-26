@@ -41,8 +41,18 @@
         <input type="number" placeholder="R3" name="r3"/>
     </div>
 
-    <script src="inputhandler.js"></script>
-    <script src="calculate.js"></script>
+    <!-- in _tools -->
+    <!-- <script src="../inputhandler.js"></script> 
+    <script src="../calculate.js"></script> -->
+    
+
+
+    
+    <script src="{{ base.url | prepend: site.url }}/assets/voltage_divider/inputhandler.js"></script>
+    <script src="{{ base.url | prepend: site.url }}/assets/voltage_divider/calculate.js"></script>
+
+
+
     <!-- include the scripts at last because they are dependable on the inputfields -->
 
 
