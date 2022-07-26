@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 
 <body>
@@ -24,8 +23,6 @@
     <header>
     <script id="navbar-template" type="text/x-handlebars-template">
 
-        <!-- use the tripple brackets to the html gets "interpreted" -->
-        {{{generateNavbar currentPage="tools.html"}}} <br />
 
     </script>
     </header>
@@ -34,28 +31,19 @@
 
     <div>
         <input type="number" placeholder="Vs" name="vs"/>
-        <p></p>
         <input type="number" placeholder="V1" name="v1"/>
-        <p></p>
         <input type="number" placeholder="V2" name="v2"/>
 
     </div>
     <div>
         <input type="number" placeholder="R1" name="r1"/>
-        <p></p>
-
         <input type="number" placeholder="R2" name="r2"/>
-        <p></p>
-
         <input type="number" placeholder="R3" name="r3"/>
     </div>
-
-    
 
     <script src="inputhandler.js"></script>
     <script src="calculate.js"></script>
     <!-- include the scripts at last because they are dependable on the inputfields -->
-
 
 
 </body>

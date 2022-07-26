@@ -5,4 +5,4 @@ author_profile: false
 layout: tools_layout
 ---
 
-A few online tools for measuring stuff.
+A few tools for measuring and calculating stuff.
